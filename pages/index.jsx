@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import MyApp from "./_app";
 import {get} from  "./dataFuncs.js";
-import {Grid} from "./render.js";
+import {DisplayItems, Grid} from "./render.js";
 // pages/index.js
 
 
@@ -30,8 +30,8 @@ export default function Home() {
             <button onClick={() => get(query.current,setData)} className="btn h-25 btn-dark" style={{width: 3 +'vw'}}>Go</button>
         </div>
 
-        <div >
-            {render ?  <Grid  className="bg-dark container-Fluid grid" data={data}></Grid> : <></>}
+        <div className="container-fluid">
+            {render ?  <DisplayItems  data={data}></DisplayItems> : <></>}
         </div>
         
       </div>

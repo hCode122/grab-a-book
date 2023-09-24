@@ -8,6 +8,7 @@ export function get(queryRef,setData) {
     "&fl[]=name"+
     "&fl[]=title"+
     "&fl[]=year"+
+    "&fl[]=creator"+
     "&fl[]=identifier"+
     "&sort[]=downloads+desc&rows=50&page=1&output=json").then((response) =>{
         response.json().then((response) => {setData(response.response.docs)})
