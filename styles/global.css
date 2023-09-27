@@ -1,39 +1,69 @@
-.alrt{
-    position:absolute;
-    top: -30vh;
+.alrt {
+  position: absolute;
+  top: -30vh;
+}
+
+.heroText {
+    font-weight: bold;
+    font-Size: 4vw;
+    position: absolute;
+    left: 15vw;
+    top: 35vh;
 }
 
 .alrt1 {
-    position:absolute;
-    animation: alert1 2s 1 forwards;
+  position: absolute;
+  animation: alert1 1s 1 forwards;
 }
 
 .alrt2 {
-    position:absolute;
-    animation: alert2 2s 1 forwards;
+  position: absolute;
+  animation: alert2 1s 1 forwards;
 }
 
 @keyframes alert1 {
-    0% {
-        top: -30vh;
-        left: 41vw;
-    }   
+  0% {
+    top: -30vh;
+    left: 41vw;
+  }
 
-    100% {
-        top: 10vh;
-        left: 41vw;
-    }
+  100% {
+    top: 10vh;
+    left: 41vw;
+  }
 }
 @keyframes alert2 {
-    0% {
-        top: 10vh;
-        left: 41vw;
-    }
+  0% {
+    top: 10vh;
+    left: 41vw;
+  }
 
-    100% {
-        top: -30vh;
-        left: 41vw;
-    }
+  100% {
+    top: -30vh;
+    left: 41vw;
+  }
 }
 
+/* Search Bar Class */
+
+.up {
     
+    transition: ease-in 0.5s;
+}
+
+.down {
+    
+    margin-top: 30vh;
+}
+
+.bg {
+    background-image:radial-gradient(circle at center, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0)),url("../public/bg.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-width {
+    border-width: 3px;
+}
