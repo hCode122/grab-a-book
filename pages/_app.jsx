@@ -1,6 +1,6 @@
 // pages/_app.js
 import "bootstrap/dist/css/bootstrap.css";
-
+import '../styles/global.css';
 
 import { useEffect } from "react";
 
