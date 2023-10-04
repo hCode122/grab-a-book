@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import { get } from "./dataFuncs.js";
-import { DisplayItems, Grid } from "./render.jsx";
+import { get } from "../utitlity/dataFuncs.js";
+import { DisplayItems, Grid } from "../utitlity/render.jsx";
 import spinner1 from "../public/loading.svg";
 import book from "../public/book.svg";
 import Image from "next/image";
