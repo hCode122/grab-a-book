@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { get } from "./dataFuncs.js";
-import { DisplayItems, Grid } from "./render.js";
+import { DisplayItems, Grid } from "./render.jsx";
 import spinner1 from "../public/loading.svg";
 import book from "../public/book.svg";
 import Image from "next/image";
 
+<script type="module"></script>
 export default function Home() {
   const [data, setData] = useState([]);
   const [alrtEr, setEr] = useState("alrt");
@@ -18,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     if (renderState == 'loading') {
-        setSC('up  container-fluid h-25  d-flex justify-content-center align-items-center gap')
+        setSC('up container-fluid h-25  d-flex justify-content-center align-items-center gap')
     }
   }, [renderState]);
 
@@ -35,7 +36,8 @@ export default function Home() {
   return (
     <div style={{overflow: 'auto'}} className="container-fluid p-3 bg vh-100">
         {(renderState == '' && alrtEr == 'alrt') ? 
-        <h1 className="text-light heroText" >Thousand of books, one search away!</h1> : <></>}
+        <><h1 className="text-light heroText" >A simple frontend for searching </h1> <h1
+        className="text-danger text-italic heroText2">Archive.org</h1></>: <></>}
       <div className="container-fluid d-flex justify-content-between ">
         <h1 className="text-light bg-dark w-25" style={{ paddingLeft: 1 + "vw"}}>
           Grab A Book{" "}
@@ -87,7 +89,7 @@ export default function Home() {
               width: "10%",
               height: "auto",
               position: "absolute",
-              left: 45 + "vw",
+              left: 44 + "vw",
             }} // optional
           />
         ) : (

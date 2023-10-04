@@ -1,3 +1,14 @@
+.main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--bs-dark);
+}
+
 .alrt {
   position: absolute;
   top: -30vh;
@@ -5,10 +16,18 @@
 
 .heroText {
     font-weight: bold;
-    font-Size: 4vw;
+    font-Size: 3vw;
     position: absolute;
     left: 15vw;
     top: 35vh;
+}
+
+.heroText2 {
+    font-weight: bold;
+    font-Size:4vw;
+    position: absolute;
+    left: 60vw;
+    top: 37vh;
 }
 
 .alrt1 {
@@ -53,12 +72,12 @@
 
 .down {
     
-    margin-top: 30vh;
+    margin-top: 40vh;
 }
 
 .bg {
     background-image:radial-gradient(circle at center, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0)),url("../public/bg.jpg");
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,4 +85,10 @@
 
 .border-width {
     border-width: 3px;
+}
+
+.popup {
+    position: fixed;
+    top: 30vh;
+    left: 25vw;
 }
